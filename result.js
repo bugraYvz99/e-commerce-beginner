@@ -72,18 +72,18 @@ const products = [
 ]
 
 
-function printInnerHtmlOnePerson(personKey, objectName){
+function printInnerHtmlOnePerson(personKey, objectName) {
     const keys = Object.keys(objectName);
     choosenPerson = objectName[personKey];
     var body = document.body;
     const newTable = document.createElement("table");
     const newLiEl = document.createElement("li");
     const currentPersonInfo = document.createTextNode(choosenPerson._id + "," +
-    choosenPerson.username + "," +
-    choosenPerson.email + "," +
-    choosenPerson.password + "," +
-    choosenPerson.createdAt + "," +
-    choosenPerson.isLoggedIn);
+        choosenPerson.username + "," +
+        choosenPerson.email + "," +
+        choosenPerson.password + "," +
+        choosenPerson.createdAt + "," +
+        choosenPerson.isLoggedIn);
     newLiEl.appendChild(currentPersonInfo);
     newTable.appendChild(newLiEl);
     body.appendChild(newTable);
@@ -92,16 +92,51 @@ function printInnerHtmlOnePerson(personKey, objectName){
 }
 
 
-function printInnerHtmlEveryPerson(objectName){
+function printInnerHtmlEveryPerson(objectName) {
     const keys = Object.keys(objectName);
     for (i in keys) {
         printInnerHtmlOnePerson(i, objectName);
     }
 }
 
-printInnerHtmlEveryPerson(users);
 
 
-function exitToLoginPage(){
-window.location.href="index.html"
+
+function exitToLoginPage() {
+    window.location.href = "index.html"
 }
+
+
+function printInnerHtmlOneProduct(productKey, objectName) {
+    const keys = Object.keys(objectName);
+    choosenProduct = objectName[productKey];
+    var body = document.body;
+    const newTable = document.createElement("table");
+    const newLiEl = document.createElement("li");
+    const currentProductInfo = document.createTextNode(choosenProduct._id + "," +
+        choosenProduct.name + "," +
+        choosenProduct.description + "," +
+        choosenProduct.price + "," +
+        choosenProduct.ratings + "," +
+        choosenProduct.likes);
+    newLiEl.appendChild(currentProductInfo);
+    newTable.appendChild(newLiEl);
+    body.appendChild(newTable);
+}
+function printInnerHtmlEveryProduct(objectName) {
+    const keys = Object.keys(objectName);
+    for (i in keys) {
+        printInnerHtmlOneProduct(i, objectName);
+    }
+}
+function ShowProducts() {
+
+    printInnerHtmlEveryProduct(products);
+    const showBtn = document.getElementById("ShowProducts").disabled = true;
+    
+}
+function ShowUser() {
+    document.getElementById("ShowUsers").disabled = true;
+    printInnerHtmlEveryPerson(users);
+}
+
