@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 function login() {
 	var uname = document.getElementById("email").value;
 	var pwd = document.getElementById("pwd1").value;
@@ -25,7 +18,7 @@ function login() {
 		alert('Thank You');
 		//Redirecting to other page or webste code or you can set your own html page.
 
-		window.location.href = "result.html"
+		window.location.href = "homepage.html"
 	}
 }
 //Reset Inputfield code.

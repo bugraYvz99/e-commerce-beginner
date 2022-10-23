@@ -1,0 +1,92 @@
+body{
+    background-color: #b17c37;
+}
+.user-image {
+    height: 2cm;
+    width: 2cm;
+}
+
+.product-image {
+    height: 5cm;
+    width: 5cm;
+    border: solid;
+    border-color: #d90000;
+    border-radius: 30px
+}
+
+.product-image:hover {
+    height: 6cm;
+    width: 6cm;
+
+
+
+}
+
+.upper-product-div {
+    display: flex;
+    width:25cm;
+    height:12cm;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    background-color: #fffefd;
+    opacity: 0.8;
+}
+
+.product-name {
+    margin-bottom: auto;
+    margin-left: 50px;
+    border: 4px solid black;
+    background-color: white;
+    color: black;
+    
+
+}
+
+.product-price {
+    margin-bottom: auto;
+    margin-left: 50px;
+    border: 4px solid black;
+    background-color: white;
+
+}
+
+.like-count {
+    border: 4px solid black;
+    background-color: white;
+    color: black;
+    margin-left: auto;
+    margin-top: auto;
+    background-color: #b17c37;
+    border-radius: 10px;
+
+}
+.product-description{
+    margin-left: 50px;
+    
+
+}
+
+.under-comments-div {
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+
+}
+
+.user-comment-div {
+    display: flex;
+    align-items: baseline;
+    border: solid;
+    border-color: black;
+    width:25cm;
+    background-color: #fffefd;
+}
+.user-comment{
+    margin-left: 50px;
+    
+    border-radius: 10px;
+}
+.user-rate{
+    margin-left: 50px;
+}

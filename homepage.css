@@ -1,0 +1,89 @@
+#ShowProducts {
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff8000;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 50px;
+    transition: 1000ms;
+    transform: translateY(0);
+}
+
+#ShowProducts:hover {
+    transition: 1000ms;
+    padding: 10px 50px;
+    transform: translateY(-0px);
+    background-color: #ff8000e2;
+    color: #000000;
+    border: none;
+}
+
+#ShowUsers {
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff8000;
+    padding: 10px 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 50px;
+    transition: 1000ms;
+    transform: translateY(0);
+}
+
+#ShowUsers:hover {
+    transition: 1000ms;
+    padding: 10px 50px;
+    transform: translateY(-0px);
+    background-color: #ff8000e2;
+    color: #000000;
+    border: none;
+}
+
+.products {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.product {
+    display: grid;
+    padding: 5px;
+    background-color: #d47e2c;
+    position: relative;
+}
+
+
+
+.product-link {
+    background-color: #858383;
+    padding: 3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+}
+
+.product-img {
+    width: 150px;
+    height: 150px;
+}
+
+.product:hover .price-text {
+    font-size: xx-large;
+    color: grey;
+
+
+}
+ .price-text:hover {
+    
+    color: #000000;
+}
+.product:hover{
+    opacity: 0.8;
+
+}

@@ -1,0 +1,123 @@
+{
+    "users": [
+        {
+            "_id": "ab12ex",
+            "username": "Alex",
+            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQEwbPOCuaX3gA/profile-displayphoto-shrink_800_800/0/1609763131428?e=2147483647&v=beta&t=Ei7i0sQ_LDparugXGoJcoX1DojRwey23nDYK_xqQU_Y",
+            "email": "alex@alex.com",
+            "password": "123123",
+            "createdAt": "08/01/2020 9:00 AM",
+            "isLoggedIn": false
+        },
+        {
+            "_id": "fg12cy",
+            "username": "Asab",
+            "image": "https://media-exp1.licdn.com/dms/image/C4E03AQEGCk1Z8Isjeg/profile-displayphoto-shrink_800_800/0/1627326117454?e=2147483647&v=beta&t=WFDcub31bJbgSfVaYmAP6erUXEgL5j_n9zUWjD2EdJ8",
+            "email": "asab@asab.com",
+            "password": "123456",
+            "createdAt": "08/01/2020 9:30 AM",
+            "isLoggedIn": true
+        },
+        {
+            "_id": "zwf8md",
+            "username": "Brook",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGQPXVqadPivA/profile-displayphoto-shrink_800_800/0/1658721501456?e=2147483647&v=beta&t=rtiZV4QHRPy0Y8bMtbGfUzy6lmTAtiXwvvuWKMhUq3I",
+            "email": "brook@brook.com",
+            "password": "123111",
+            "createdAt": "08/01/2020 9:45 AM",
+            "isLoggedIn": true
+        },
+        {
+            "_id": "eefamr",
+            "username": "Martha",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE4fBbXz9EXGgYMw1uovDBtdzZw9DALOQg_Q&usqp=CAU",
+            "email": "martha@martha.com",
+            "password": "123222",
+            "createdAt": "08/01/2020 9:50 AM",
+            "isLoggedIn": false
+        },
+        {
+            "_id": "ghderc",
+            "username": "Thomas",
+            "image": "https://media-exp1.licdn.com/dms/image/C4D03AQG9xjRWjzz0hQ/profile-displayphoto-shrink_800_800/0/1606334076656?e=2147483647&v=beta&t=2vDwNkAEjNbsR2L8IQqDyJJxmh4dc5G98Hs1SbwU51U",
+            "email": "thomas@thomas.com",
+            "password": "123333",
+            "createdAt": "08/01/2020 10:00 AM",
+            "isLoggedIn": false
+        }
+    ],
+    "products": [
+        {
+            "_id": "eedfcf",
+            "name": "Mobile Phone",
+            "description": "Huawei Honor",
+            "image": "img/113155_small.jpg",
+            "price": 200,
+            "ratings": [
+                {
+                    "userId": "fg12cy",
+                    "rate": 5,
+                    "comment": "awesome product"
+                },
+                {
+                    "userId": "zwf8md",
+                    "rate": 1.5,
+                    "comment": "Dont like it :(..."
+                },
+                {
+                    "userId": "ab12ex",
+                    "rate": 5,
+                    "comment": "Good price<3"
+                }
+            ],
+            "likes": []
+        },
+        {
+            "_id": "aegfal",
+            "name": "Laptop",
+            "image": "img/SL4_AMD_1.jpg",
+            "description": "MacPro: System Darwin",
+            "price": 2500,
+            "ratings": [
+                {
+                    "userId": "ghderc",
+                    "rate": 4.5,
+                    "comment": "This is a perfect laptop, ı love it !"
+                }
+            ],
+            "likes": [
+                "fg12cy",
+                "ab12ex"
+            ]
+        },
+        {
+            "_id": "hedfcg",
+            "name": "TV",
+            "image": "img/11079320731698.jpg",
+            "description": "Smart TV:Procaster",
+            "price": 400,
+            "ratings": [
+                {
+                    "userId": "fg12cy",
+                    "rate": 5,
+                    "comment": "awesome product"
+                },
+                {
+                     "userId": "eefamr",
+                    "rate": 4.5,
+                    "comment": "like that !"
+                },
+                   
+                
+                {
+                    "userId": "ghderc",
+                    "rate": 4.5,
+                    "comment": "This is a perfect laptop, ı love it !"
+                }
+            ],
+            "likes": [
+                "fg12cy"
+            ]
+        }
+    ]
+}
