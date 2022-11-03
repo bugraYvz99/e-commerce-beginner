@@ -6,37 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
-    <!-- Main div code -->
-    <div id="main">
-        <div class="h-tag">
-            <h2>Welcome To My Account Login</h2>
+    <div class="login">
+        <div class="login-left">
+            <div class="logo-div">
+                <img class="logo-img" src="img/3714797.png" alt="">
+
+            </div>
+            <div class="left-text-div">
+                <p class="left-text">Shopping safely</p>
+            </div>
         </div>
-        <!-- Login box -->
-        <div class="login">
-            <table cellspacing="2" align="center" cellpadding="8" border="0">
-                <tr>
-                    <td>Enter User Name :</td>
-                    <td><input type="text" placeholder="Enter user name here" id="email" class="tb" /></td>
-                </tr>
-                <tr>
-                    <td>Enter Password :</td>
-                    <td><input type="password" placeholder="Enter Password here" id="pwd1" class="tb" /></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <input type="submit" value="Reset" onclick="clearFunc()" class="btn" />
-                        <input type="submit" value="Login" onclick="login()" class="btn" />
-                    </td>
-                </tr>
-            </table>
+        <div class="login-right">
+            <h1 class="login-title">Buğrayol</h1>
+            <h3 class="login-text">Welcome to bugrayol</h3>
+            <div class="input-div">
+                <div class="email-div">
+                    <label for="email">E-mail</label>
+                    <input id="uname" type="email" placeholder="johnson@gmail.com">
+            </div>
+                <div class="pass-div">
+                    <label for="password">Password</label>
+                    <input id="pwd" type="password" placeholder="Password">
+            </div>
+                
+                <p>Forgot password?</p>
+            </div>
+
+            <button onclick="login()" class="login-btn">Sign in</button>
+
         </div>
-        <!-- login box div ending here.. -->
     </div>
-    <!-- Main div ending here... -->
 
     <script src="login.js"></script>
 </body>

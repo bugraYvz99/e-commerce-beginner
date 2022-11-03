@@ -1,7 +1,7 @@
 function login() {
-	var uname = document.getElementById("email").value;
-	var pwd = document.getElementById("pwd1").value;
-	var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	var uname = document.getElementById("uname").value;
+	var pwd = document.getElementById("pwd").value;
+	var filter = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 	if (uname == '') {
 		alert("please enter user name.");
 	}
@@ -15,14 +15,10 @@ function login() {
 		alert("Password charachter range 3-12 !.");
 	}
 	else {
-		alert('Thank You');
+		
 		//Redirecting to other page or webste code or you can set your own html page.
 
 		window.location.href = "homepage.html"
 	}
 }
 //Reset Inputfield code.
-function clearFunc() {
-	document.getElementById("email").value = "";
-	document.getElementById("pwd1").value = "";
-}

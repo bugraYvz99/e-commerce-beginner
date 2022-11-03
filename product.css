@@ -1,6 +1,17 @@
-body{
+body {
+
     background-color: #b17c37;
+
+
 }
+
+.content-div {
+    display: grid;
+    justify-content: center;
+    margin-top: 5cm;
+
+}
+
 .user-image {
     height: 2cm;
     width: 2cm;
@@ -14,18 +25,12 @@ body{
     border-radius: 30px
 }
 
-.product-image:hover {
-    height: 6cm;
-    width: 6cm;
 
-
-
-}
 
 .upper-product-div {
     display: flex;
-    width:25cm;
-    height:12cm;
+    width: 25cm;
+    height: 12cm;
     flex-wrap: wrap;
     justify-content: flex-start;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
@@ -39,7 +44,7 @@ body{
     border: 4px solid black;
     background-color: white;
     color: black;
-    
+
 
 }
 
@@ -61,9 +66,10 @@ body{
     border-radius: 10px;
 
 }
-.product-description{
+
+.product-description {
     margin-left: 50px;
-    
+
 
 }
 
@@ -79,14 +85,17 @@ body{
     align-items: baseline;
     border: solid;
     border-color: black;
-    width:25cm;
+    width: 25cm;
     background-color: #fffefd;
 }
-.user-comment{
+
+.user-comment {
     margin-left: 50px;
-    
+
     border-radius: 10px;
 }
-.user-rate{
+
+.user-rate {
     margin-left: 50px;
 }
+
