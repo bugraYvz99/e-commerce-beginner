@@ -11,7 +11,7 @@ body {
 .login {
     margin: auto auto;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 50% 50%;
     position: absolute;
     left: 20%;
     top: 20%;
@@ -27,10 +27,9 @@ body {
 
 .login-left {
     display: flex;
-    
-    background-color: #ecb15c;
+    background:linear-gradient(-45deg, #f7f5f5 35%, #ecb15c 85%);
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     font-size: larger;
     font-family: roboto;
@@ -38,7 +37,7 @@ body {
 
 .login-right {
     display: flex;
-    background-color: hsl(41, 63%, 57%);
+    background:linear-gradient(45deg, #f7f5f5 35%, #ecb15c 85%);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -49,17 +48,17 @@ body {
 }
 
 .input-div {
-    background-color: hsl(41, 63%, 57%);
+    background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 4cm;
-    width: 5cm;
+    height: 30%;
+    width: 80%;
 
 }
 .logo-div{
-    height:80%;
-    width: 70%;
+    height:70%;
+    width: 60%;
 }
 
 .logo-img {
@@ -68,18 +67,26 @@ body {
     
 }
 
-.left-text {
-    margin-top: 2cm;
+.text span {
+    font-variant-caps: small-caps;
+    font-size: xx-large;
+    font-family:roboto;
+    text-transform: uppercase;
+    animation: zoomup 15s linear infinite;
+    animation-delay: calc(400ms * var(--i));
+    
 }
+
 
 #uname {
     font-family: roboto;
     font-size: 19px;
-
-    height: 25px;
     border: none;
-    width: 5cm;
-
+    outline: none;
+    height: 100%;
+    border: none;
+    width: 50%;
+    transition: width .35s ease-in-out;
     background: none;
 
 
@@ -88,10 +95,12 @@ body {
 #pwd {
     font-family: roboto;
     font-size: 19px;
-
-    height: 25px;
     border: none;
-    width: 5cm;
+    outline: none;
+    height: 100%;
+    border: none;
+    width: 50%;
+    transition: width .35s ease-in-out;
 
     background: none;
 }
@@ -105,30 +114,36 @@ label {
 .email-div {
     display: flex;
     flex-direction: column;
+    height: 30%;
+    width: 100%;
     background: none;
 
 }
 
 .pass-div {
     display: flex;
+    height: 30%;
+    width: 100%;
     flex-direction: column;
     background: none;
 }
 
 #uname:focus {
+    
     border-bottom: 2px solid #453641;
+    width: 95%;
 
 }
 
 #pwd:focus {
     border-bottom: 2px solid #453641;
-    
+    width: 95%;
 }
 
 .login-btn {
     cursor: pointer;
-    width: 7cm;
-    height: 2cm;
+    width: 80%;
+    height: 20%;
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.65);
     border-radius: 25px;
@@ -138,12 +153,31 @@ label {
 
 .login-btn:hover {
     background: rgba(255, 255, 255, 0.15);
-    color: #fff;
+    color: #da6900;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
 
 }
 .left-text-div{
-    height:30%;
-    width: 30%;
+    display: contents;
+    height: 10%;
+    width: 100%;
+    
 }
+@keyframes zoomup {
+    0%,
+    100% {
+      color: #da6900;
+      filter: blur(1px);
+      text-shadow: 0 0 10px #da6900, 0 0 20px #da6900, 0 0 30px #da6900,
+        0 0 40px #da6900, 0 0 60px #da6900#da6900, 0 0 80px #da6900, 0 0 100px #da6900,
+        0 0 120px #da6900;
+    }
+  
+    5%,
+    95% {
+      filter: blur(0);
+      color: rgb(187, 31, 31);
+      text-shadow: none;
+    }
+  }

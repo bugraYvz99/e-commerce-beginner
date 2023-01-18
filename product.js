@@ -101,13 +101,13 @@ fetch("./data.json").then(res => res.json())
             productName.innerHTML = getProductCard(id).product.name;
             let productPrice = document.createElement("span");
             productPrice.className = "product-price"
-            productPrice.innerHTML = getProductCard(id).product.price+ "$";
+            productPrice.innerHTML =`${getProductCard(id).product.price}<i class="fa-solid fa-dollar-sign" style="font-size: 21px; margin-left:4px;"></i>`;
             let productDescription = document.createElement("span");
             productDescription.className = "product-description"
-            productDescription.innerHTML = "Description =" + getProductCard(id).product.description;
+            productDescription.innerHTML = "Description =" + getProductCard(id).product.description + "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
             let likeCount = document.createElement("span");
             likeCount.className = "like-count";
-            likeCount.innerHTML = getProductCard(id).product.likes.length + "Likes";
+            likeCount.innerHTML = `${getProductCard(id).product.likes.length} <i class="fa-sharp fa-solid fa-thumbs-up"></i>`;
 
 
             let ratingsLenght = getProductCard(id).product.ratings.length;
@@ -125,7 +125,7 @@ fetch("./data.json").then(res => res.json())
                 comments.appendChild(commentText)
                 let userRate = document.createElement("span")
                 userRate.className = "user-rate";
-                userRate.innerHTML = "This user rated that product by 5/" + getProductCard(id).product.ratings[i].rate+ " points.";
+                userRate.innerHTML = "This user rated that product by 5/" + getProductCard(id).product.ratings[i].rate + " points.";
                 comments.appendChild(userRate);
                 underCommentsDiv.appendChild(comments)
 
@@ -146,12 +146,15 @@ fetch("./data.json").then(res => res.json())
             upperProductDiv.appendChild(productPrice)
             upperProductDiv.appendChild(productDescription)
             upperProductDiv.appendChild(likeCount)
-            
+
 
 
         }
         createProductPage();
         console.log(getProductCard(id))
-        
+
 
     });
+function backBtn() {
+    window.location.href = "homepage.html"
+}
